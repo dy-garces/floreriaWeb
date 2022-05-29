@@ -1,6 +1,9 @@
 {% extends 'aplicacionfloreria/base.html' %}
 {% load static %}
 {% block contenido %}
+{% load humanize %}
+
+
 
 <section>
     <div class="p-5 bg-light">
@@ -13,66 +16,24 @@
 <section>
     <div class="container p-0  ">
         <div class="row d-flex justify-content-center mx-0">
-            <div class="col-lg-3 col-sm-6 text-center border shadow m-3 ">
-                <img src="{% static 'aplicacionfloreria/img/macetero1.jpg'%}" alt="" class="img-fluid">
-                <h3>Cesta Mimbre Arena</h3>
-                <p>Precio: 8290</p>
-                <button type="button" class="btn btn-success">Agregar al carrito</button>
-            </div>
-            <div class="col-lg-3 col-sm-6 text-center border shadow m-3">
-                <img src="{% static 'aplicacionfloreria/img/macetero2.png'%}" alt="" class="img-fluid">
-                <h3>Maceta Alerce</h3>
-                <p>Precio: 39900</p>
-                <button type="button" class="btn btn-success">Agregar al carrito</button>
-            </div>
-            <div class="col-lg-3 col-sm-6 text-center border shadow m-3">
-                <img src=" {% static 'aplicacionfloreria/img/macetero3.png'%} " alt="" class="img-fluid">
-                <h3>Maceta Acrisol</h3>
-                <p>Precio: 54990</p>
-                <button type="button" class="btn btn-success">Agregar al carrito</button>
-            </div>
-        </div>
+         
+                {% for p in productos %}
 
-        <div class="row d-flex justify-content-center mx-0">
-            <div class="col-lg-3 col-sm-6 text-center border shadow m-3">
-                <img src=" {% static 'aplicacionfloreria/img/macetero4.png'%} " alt="" class="img-fluid">
-                <h3>Maceta cemento</h3>
-                <p>Precio: 35000</p>
-                <button type="button" class="btn btn-success">Agregar al carrito</button>
-            </div>
-            <div class="col-lg-3 col-sm-6 text-center border shadow m-3">
-                <img src=" {% static 'aplicacionfloreria/img/macetero5.png'%}" alt="" class="img-fluid">
-                <h3>Maceta Elegante Negro</h3>
-                <p>Precio: 20990</p>
-                <button type="button" class="btn btn-success">Agregar al carrito</button>
-            </div>
-            <div class="col-lg-3 col-sm-6 text-center border shadow m-3">
-                <img src=" {% static 'aplicacionfloreria/img/macetero6.jpeg'%} " alt="" class="img-fluid">
-                <h3>Maceta Elegante Blanco</h3>
-                <p>Precio: 20990</p>
-                <button type="button" class="btn btn-success">Agregar al carrito</button>
-            </div>
-        </div>
+                <div class="col-lg-3 col-sm-6 text-center border shadow m-3 ">
 
-        <div class="row d-flex justify-content-center mx-0">
-            <div class="col-lg-3 col-sm-6 text-center border shadow m-3">
-                <img src=" {% static 'aplicacionfloreria/img/macetero7.jpeg'%} " alt="" class="img-fluid">
-                <h3>Maceta Elegante Dark</h3>
-                <p>Precio: 20990</p>
-                <button type="button" class="btn btn-success">Agregar al carrito</button>
-            </div>
-            <div class="col-lg-3 col-sm-6 text-center border shadow m-3">
-                <img src=" {% static 'aplicacionfloreria/img/macetero8.png'%} " alt="" class="img-fluid">
-                <h3>Maceta Geometrica Blanca</h3>
-                <p>Precio: 9990</p>
-                <button type="button" class="btn btn-success">Agregar al carrito</button>
-            </div>
-            <div class="col-lg-3 col-sm-6 text-center border shadow m-3">
-                <img src=" {% static 'aplicacionfloreria/img/macetero9.jpeg'%} " alt="" class="img-fluid">
-                <h3>Set Macetas Elegantes</h3>
-                <p>Precio: 41900</p>
-                <button type="button" class="btn btn-success">Agregar al carrito</button>
-            </div>
+                    {% if p.imgen %}
+                    
+                        <img src="{{ p.imgen.url }} " alt="imagen" class="img-fluid">
+
+                    {% endif %}
+
+                    <h3>{{ p.nombre | title}}</h3>
+                    <p>Precio: {{ p.precio | intcomma}}</p>
+                    <button type="button" class="btn btn-success">Agregar al carrito</button>
+                </div>
+
+                {% endfor %}
+
         </div>
     </div>
 </section>

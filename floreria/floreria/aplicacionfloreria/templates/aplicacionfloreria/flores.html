@@ -1,6 +1,8 @@
 {% extends 'aplicacionfloreria/base.html' %}
 {% load static %}
+
 {% block contenido %}
+{% load humanize %}
 
 <section>
     <div class="p-5 bg-light">
@@ -13,66 +15,26 @@
 <section>
     <div class="container p-0  ">
         <div class="row d-flex justify-content-center mx-0">
-            <div class="col-lg-3 col-sm-6 text-center border shadow m-3 ">
-                <img src="{% static 'aplicacionfloreria/img/flor1.jpg' %} " alt="" class="img-fluid">
-                <h3>Pensamiento</h3>
-                <p>Precio: 4500</p>
-                <button type="button" class="btn btn-success">Agregar al carrito</button>
-            </div>
-            <div class="col-lg-3 col-sm-6 text-center border shadow m-3">
-                <img src="{% static 'aplicacionfloreria/img/flor2.jpg'%}" alt="" class="img-fluid">
-                <h3>Orquideas</h3>
-                <p>Precio: 5000</p>
-                <button type="button" class="btn btn-success">Agregar al carrito</button>
-            </div>
-            <div class="col-lg-3 col-sm-6 text-center border shadow m-3">
-                <img src="{% static 'aplicacionfloreria/img/flor3.jpg'%}" alt="" class="img-fluid">
-                <h3>Arreglo de Rosas</h3>
-                <p>Precio: 15000</p>
-                <button type="button" class="btn btn-success">Agregar al carrito</button>
-            </div>
-        </div>
 
-        <div class="row d-flex justify-content-center mx-0">
-            <div class="col-lg-3 col-sm-6 text-center border shadow m-3">
-                <img src="{% static 'aplicacionfloreria/img/flor5.jpg' %}" alt="" class="img-fluid">
-                <h3>Pensamiento Lila</h3>
-                <p>Precio: 3500</p>
-                <button type="button" class="btn btn-success">Agregar al carrito</button>
-            </div>
-            <div class="col-lg-3 col-sm-6 text-center border shadow m-3">
-                <img src=" {% static 'aplicacionfloreria/img/flor6.jpg' %}" alt="" class="img-fluid">
-                <h3>Tulipan</h3>
-                <p>Precio: 7500</p>
-                <button type="button" class="btn btn-success">Agregar al carrito</button>
-            </div>
-            <div class="col-lg-3 col-sm-6 text-center border shadow m-3">
-                <img src="{% static 'aplicacionfloreria/img/flor4.jpg' %}" alt="" class="img-fluid">
-                <h3>Rosas Blancas</h3>
-                <p>Precio: 7500</p>
-                <button type="button" class="btn btn-success">Agregar al carrito</button>
-            </div>
-        </div>
+       
+                {% for p in productos %}
 
-        <div class="row d-flex justify-content-center mx-0">
-            <div class="col-lg-3 col-sm-6 text-center border shadow m-3">
-                <img src="{% static 'aplicacionfloreria/img/flor7.jpg' %}" alt="" class="img-fluid">
-                <h3>Tulipan Amarillo</h3>
-                <p>Precio: 9500</p>
-                <button type="button" class="btn btn-success">Agregar al carrito</button>
-            </div>
-            <div class="col-lg-3 col-sm-6 text-center border shadow m-3">
-                <img src="{% static 'aplicacionfloreria/img/flor8.jpeg' %}" alt="" class="img-fluid">
-                <h3>Rosas rosadas</h3>
-                <p>Precio: 10000</p>
-                <button type="button" class="btn btn-success">Agregar al carrito</button>
-            </div>
-            <div class="col-lg-3 col-sm-6 text-center border shadow m-3">
-                <img src="{% static 'aplicacionfloreria/img/flor9.jpg' %}" alt="" class="img-fluid">
-                <h3>Azalea</h3>
-                <p>Precio: 15500</p>
-                <button type="button" class="btn btn-success">Agregar al carrito</button>
-            </div>
+                <div class="col-lg-3 col-sm-6 text-center border shadow m-3 ">
+
+                    {% if p.imgen %}
+                    
+                        <img src="{{ p.imgen.url }} " alt="imagen" class="img-fluid">
+
+                    {% endif %}
+
+                    <h3>{{ p.nombre | title}}</h3>
+                    <p>Precio: {{ p.precio | intcomma}}</p>
+                    <button type="button" class="btn btn-success">Agregar al carrito</button>
+                </div>
+
+                {% endfor %}
+
+        
         </div>
     </div>
 </section>

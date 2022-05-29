@@ -1,0 +1,79 @@
+{% extends 'aplicacionfloreria/base.html' %}
+{% load static %}
+{% block contenido %}
+<section>
+    <div class="p-5 bg-light">
+        <div class="container">
+            <h1 class="display-3 text-center bg-light">PLANTAS</h1>
+        </div>
+    </div>
+</section>
+
+<section>
+    <div class="container p-0  ">
+        <div class="row d-flex justify-content-center mx-0">
+            <div class="col-lg-3 col-sm-6 text-center border shadow m-3 ">
+                <img src="{% static 'aplicacionfloreria/img/plantass1.jpg'%}" alt="" class="img-fluid">
+                <h3>Bird</h3>
+                <p>Precio: 25000</p>
+                <button type="button" class="btn btn-success">Agregar al carrito</button>
+            </div>
+            <div class="col-lg-3 col-sm-6 text-center border shadow m-3">
+                <img src=" {% static 'aplicacionfloreria/img/plantass2.jpg'%} " alt="" class="img-fluid">
+                <h3>Strelitzia</h3>
+                <p>Precio: 28000</p>
+                <button type="button" class="btn btn-success">Agregar al carrito</button>
+            </div>
+            <div class="col-lg-3 col-sm-6 text-center border shadow m-3">
+                <img src="{% static 'aplicacionfloreria/img/plantass3.jpg'%}" alt="" class="img-fluid">
+                <h3>Dracaena</h3>
+                <p>Precio: 85000</p>
+                <button type="button" class="btn btn-success">Agregar al carrito</button>
+            </div>
+        </div>
+
+        <div class="row d-flex justify-content-center mx-0">
+            <div class="col-lg-3 col-sm-6 text-center border shadow m-3">
+                <img src="{% static 'aplicacionfloreria/img/plantass4.jpg'%}" alt="" class="img-fluid">
+                <h3>Palmera</h3>
+                <p>Precio: 68000</p>
+                <button type="button" class="btn btn-success">Agregar al carrito</button>
+            </div>
+            <div class="col-lg-3 col-sm-6 text-center border shadow m-3">
+                <img src="{% static 'aplicacionfloreria/img/plantass5.jpg'%}" alt="" class="img-fluid">
+                <h3>Olivo</h3>
+                <p>Precio: 60000</p>
+                <button type="button" class="btn btn-success">Agregar al carrito</button>
+            </div>
+            <div class="col-lg-3 col-sm-6 text-center border shadow m-3">
+                <img src=" {% static 'aplicacionfloreria/img/plantass6.jpg'%} " alt="" class="img-fluid">
+                <h3>Murraya</h3>
+                <p>Precio: 28000</p>
+                <button type="button" class="btn btn-success">Agregar al carrito</button>
+            </div>
+        </div>
+
+        <div class="row d-flex justify-content-center mx-0">
+            <div class="col-lg-3 col-sm-6 text-center border shadow m-3">
+                <img src="{% static 'aplicacionfloreria/img/plantass7.jpg'%}" alt="" class="img-fluid">
+                <h3>Maranta</h3>
+                <p>Precio: 15000</p>
+                <button type="button" class="btn btn-success">Agregar al carrito</button>
+            </div>
+            <div class="col-lg-3 col-sm-6 text-center border shadow m-3">
+                <img src=" {% static 'aplicacionfloreria/img/plantass8.jpg'%} " alt="" class="img-fluid">
+                <h3>Banano</h3>
+                <p>Precio: 165000</p>
+                <button type="button" class="btn btn-success">Agregar al carrito</button>
+            </div>
+            <div class="col-lg-3 col-sm-6 text-center border shadow m-3">
+                <img src=" {% static 'aplicacionfloreria/img/plantass9.jpg'%}" alt="" class="img-fluid">
+                <h3>Monstera</h3>
+                <p>Precio: 19000</p>
+                <button type="button" class="btn btn-success">Agregar al carrito</button>
+            </div>
+        </div>
+    </div>
+</section>
+
+{% endblock contenido %}

@@ -1,0 +1,78 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="076A5029-7A32-F50F-8BB2-19A45E24A161" name="estado_subcripcion">
+<createdBy>Dylla</createdBy>
+<createdTime>2022-05-29 18:46:07 UTC</createdTime>
+<ownerDesignName>modelo</ownerDesignName>
+<engineerTo>
+<item key="150AED53-2905-E9A4-1F6A-3D46C4C84CF1" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="hora" id="D587B9BF-AB23-B705-8837-5B195683EDD0">
+<createdBy>Dylla</createdBy>
+<createdTime>2022-05-29 18:46:28 UTC</createdTime>
+<ownerDesignName>modelo</ownerDesignName>
+<engineerTo>
+<item key="150AED53-2905-E9A4-1F6A-3D46C4C84CF1" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="fecha" id="75C72E03-03EA-7663-920C-563D62AA8253">
+<createdBy>Dylla</createdBy>
+<createdTime>2022-05-29 18:46:36 UTC</createdTime>
+<ownerDesignName>modelo</ownerDesignName>
+<engineerTo>
+<item key="150AED53-2905-E9A4-1F6A-3D46C4C84CF1" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="numero_subcripcion" id="E00403A7-C557-8797-688E-085821AB7F8F">
+<createdBy>Dylla</createdBy>
+<createdTime>2022-05-29 18:49:04 UTC</createdTime>
+<generatorID>289B709F-E6EC-94AE-DF92-0E972880B5C9</generatorID>
+<ownerDesignName>modelo</ownerDesignName>
+<engineerTo>
+<item key="150AED53-2905-E9A4-1F6A-3D46C4C84CF1" value="true"/>
+</engineerTo>
+<referedAttribute>71CD7522-BE66-3D46-3D91-97C7D1D10D5A</referedAttribute>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="rut_cliente" id="B2DE87E0-638A-84C7-96D1-06963C94B2E4">
+<createdBy>Dylla</createdBy>
+<createdTime>2022-05-29 18:49:15 UTC</createdTime>
+<generatorID>0C823E02-7DFF-CA4B-6FFF-7DA0A5963962</generatorID>
+<ownerDesignName>modelo</ownerDesignName>
+<engineerTo>
+<item key="150AED53-2905-E9A4-1F6A-3D46C4C84CF1" value="true"/>
+</engineerTo>
+<referedAttribute>9C978A76-EAC0-DFF0-B406-E683C02402F4</referedAttribute>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="3FBFCECA-BC0A-EE9C-2415-08937FBB07B6" name="estado_subcripcion PK">
+<createdBy>Dylla</createdBy>
+<createdTime>2022-05-29 18:46:35 UTC</createdTime>
+<ownerDesignName>modelo</ownerDesignName>
+<engineerTo>
+<item key="150AED53-2905-E9A4-1F6A-3D46C4C84CF1" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>D587B9BF-AB23-B705-8837-5B195683EDD0</attributeRef>
+<attributeRef>75C72E03-03EA-7663-920C-563D62AA8253</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

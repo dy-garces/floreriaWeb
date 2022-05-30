@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Relation_10" directorySegmentName="seg_0" id="D404C5B8-69E5-5A27-E659-ECEDE4EC748B">
+<createdBy>Dylla</createdBy>
+<createdTime>2022-05-29 18:57:02 UTC</createdTime>
+<ownerDesignName>modelo</ownerDesignName>
+<engineerTo>
+<item key="150AED53-2905-E9A4-1F6A-3D46C4C84CF1" value="true"/>
+</engineerTo>
+<sourcePk>095D88C4-842F-B36F-036B-92A945D4EE0A</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>744E09D8-206F-E421-9AE8-EA9271BD4971</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>DCF7BF70-EC72-2F10-9495-B50B4F812AEC</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

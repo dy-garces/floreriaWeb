@@ -1,0 +1,53 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="91BBA011-6D0A-534A-31AA-012832EBAF94" name="subcripcion">
+<createdBy>Dylla</createdBy>
+<createdTime>2022-05-29 18:46:46 UTC</createdTime>
+<ownerDesignName>modelo</ownerDesignName>
+<engineerTo>
+<item key="150AED53-2905-E9A4-1F6A-3D46C4C84CF1" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="numero_subcripcion" id="71CD7522-BE66-3D46-3D91-97C7D1D10D5A">
+<createdBy>Dylla</createdBy>
+<createdTime>2022-05-29 18:46:54 UTC</createdTime>
+<ownerDesignName>modelo</ownerDesignName>
+<engineerTo>
+<item key="150AED53-2905-E9A4-1F6A-3D46C4C84CF1" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="descuento" id="88B531F8-3CF2-21A7-72A2-AC08D73E1CB8">
+<createdBy>Dylla</createdBy>
+<createdTime>2022-05-29 18:47:04 UTC</createdTime>
+<ownerDesignName>modelo</ownerDesignName>
+<engineerTo>
+<item key="150AED53-2905-E9A4-1F6A-3D46C4C84CF1" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="D754DC64-0357-04A2-0374-4D0794FEBCF9" name="subcripcion PK">
+<createdBy>Dylla</createdBy>
+<createdTime>2022-05-29 18:47:09 UTC</createdTime>
+<ownerDesignName>modelo</ownerDesignName>
+<engineerTo>
+<item key="150AED53-2905-E9A4-1F6A-3D46C4C84CF1" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>71CD7522-BE66-3D46-3D91-97C7D1D10D5A</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

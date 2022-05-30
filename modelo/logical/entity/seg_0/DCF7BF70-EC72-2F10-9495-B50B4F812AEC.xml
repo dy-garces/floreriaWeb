@@ -1,0 +1,110 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="DCF7BF70-EC72-2F10-9495-B50B4F812AEC" name="vendedor">
+<createdBy>Dylla</createdBy>
+<createdTime>2022-05-29 18:56:20 UTC</createdTime>
+<ownerDesignName>modelo</ownerDesignName>
+<engineerTo>
+<item key="150AED53-2905-E9A4-1F6A-3D46C4C84CF1" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="rut_vendedor" id="4FDA9831-8965-4A18-4E84-B9841B111175">
+<createdBy>Dylla</createdBy>
+<createdTime>2022-05-29 18:56:24 UTC</createdTime>
+<ownerDesignName>modelo</ownerDesignName>
+<engineerTo>
+<item key="150AED53-2905-E9A4-1F6A-3D46C4C84CF1" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="nombre" id="57C278AA-971E-E87B-56B2-846206868A27">
+<createdBy>Dylla</createdBy>
+<createdTime>2022-05-29 18:56:29 UTC</createdTime>
+<ownerDesignName>modelo</ownerDesignName>
+<engineerTo>
+<item key="150AED53-2905-E9A4-1F6A-3D46C4C84CF1" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="apellido" id="CCD30CD3-0491-E51E-F8EE-BFC4D8F4B208">
+<createdBy>Dylla</createdBy>
+<createdTime>2022-05-29 18:56:37 UTC</createdTime>
+<ownerDesignName>modelo</ownerDesignName>
+<engineerTo>
+<item key="150AED53-2905-E9A4-1F6A-3D46C4C84CF1" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="apellido_materno" id="27F81F6A-64E2-2B10-BDD6-B99C2B6D2B47">
+<createdBy>Dylla</createdBy>
+<createdTime>2022-05-29 18:56:41 UTC</createdTime>
+<ownerDesignName>modelo</ownerDesignName>
+<engineerTo>
+<item key="150AED53-2905-E9A4-1F6A-3D46C4C84CF1" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="correo" id="BDB50D92-3601-F29B-AE0E-CEFC9FD5D3F1">
+<createdBy>Dylla</createdBy>
+<createdTime>2022-05-29 18:56:50 UTC</createdTime>
+<ownerDesignName>modelo</ownerDesignName>
+<engineerTo>
+<item key="150AED53-2905-E9A4-1F6A-3D46C4C84CF1" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="num" id="755EC606-40FD-7200-831D-683C9F343361">
+<createdBy>Dylla</createdBy>
+<createdTime>2022-05-29 18:56:55 UTC</createdTime>
+<ownerDesignName>modelo</ownerDesignName>
+<engineerTo>
+<item key="150AED53-2905-E9A4-1F6A-3D46C4C84CF1" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_comuna" id="8AEE1731-E119-A8C6-037F-2B983AD0F446">
+<createdBy>Dylla</createdBy>
+<createdTime>2022-05-29 18:57:02 UTC</createdTime>
+<generatorID>D404C5B8-69E5-5A27-E659-ECEDE4EC748B</generatorID>
+<ownerDesignName>modelo</ownerDesignName>
+<engineerTo>
+<item key="150AED53-2905-E9A4-1F6A-3D46C4C84CF1" value="true"/>
+</engineerTo>
+<referedAttribute>9C68DABB-589B-956C-67A9-8BC594734D5F</referedAttribute>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="E9A5AF2C-BCE7-9FFA-9760-39260D7E0E7A" name="vendedor PK">
+<createdBy>Dylla</createdBy>
+<createdTime>2022-05-29 18:56:32 UTC</createdTime>
+<ownerDesignName>modelo</ownerDesignName>
+<engineerTo>
+<item key="150AED53-2905-E9A4-1F6A-3D46C4C84CF1" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>4FDA9831-8965-4A18-4E84-B9841B111175</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

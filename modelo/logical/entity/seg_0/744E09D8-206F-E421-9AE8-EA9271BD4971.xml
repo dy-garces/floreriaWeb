@@ -1,0 +1,65 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="744E09D8-206F-E421-9AE8-EA9271BD4971" name="comuna">
+<createdBy>Dylla</createdBy>
+<createdTime>2022-05-29 18:51:05 UTC</createdTime>
+<ownerDesignName>modelo</ownerDesignName>
+<engineerTo>
+<item key="150AED53-2905-E9A4-1F6A-3D46C4C84CF1" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id_comuna" id="9C68DABB-589B-956C-67A9-8BC594734D5F">
+<createdBy>Dylla</createdBy>
+<createdTime>2022-05-29 18:51:10 UTC</createdTime>
+<ownerDesignName>modelo</ownerDesignName>
+<engineerTo>
+<item key="150AED53-2905-E9A4-1F6A-3D46C4C84CF1" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="nombre_comuna" id="CB529D45-100F-DCBB-96F9-A89C210CCB6C">
+<createdBy>Dylla</createdBy>
+<createdTime>2022-05-29 18:51:13 UTC</createdTime>
+<ownerDesignName>modelo</ownerDesignName>
+<engineerTo>
+<item key="150AED53-2905-E9A4-1F6A-3D46C4C84CF1" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_region" id="3833284A-0B9C-B8F2-3694-70014070C4AE">
+<createdBy>Dylla</createdBy>
+<createdTime>2022-05-29 18:51:31 UTC</createdTime>
+<generatorID>FC3008FD-4276-E4A6-D6BA-BAEF167A528D</generatorID>
+<ownerDesignName>modelo</ownerDesignName>
+<engineerTo>
+<item key="150AED53-2905-E9A4-1F6A-3D46C4C84CF1" value="true"/>
+</engineerTo>
+<referedAttribute>3EC85CA5-A18D-390E-A476-573BB77EC556</referedAttribute>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="095D88C4-842F-B36F-036B-92A945D4EE0A" name="comuna PK">
+<createdBy>Dylla</createdBy>
+<createdTime>2022-05-29 18:51:20 UTC</createdTime>
+<ownerDesignName>modelo</ownerDesignName>
+<engineerTo>
+<item key="150AED53-2905-E9A4-1F6A-3D46C4C84CF1" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>9C68DABB-589B-956C-67A9-8BC594734D5F</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

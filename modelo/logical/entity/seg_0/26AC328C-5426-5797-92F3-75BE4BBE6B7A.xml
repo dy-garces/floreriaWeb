@@ -1,0 +1,106 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="26AC328C-5426-5797-92F3-75BE4BBE6B7A" name="Cliente">
+<createdBy>Dylla</createdBy>
+<createdTime>2022-05-29 18:47:22 UTC</createdTime>
+<ownerDesignName>modelo</ownerDesignName>
+<engineerTo>
+<item key="150AED53-2905-E9A4-1F6A-3D46C4C84CF1" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="rut_cliente" id="9C978A76-EAC0-DFF0-B406-E683C02402F4">
+<createdBy>Dylla</createdBy>
+<createdTime>2022-05-29 18:47:28 UTC</createdTime>
+<ownerDesignName>modelo</ownerDesignName>
+<engineerTo>
+<item key="150AED53-2905-E9A4-1F6A-3D46C4C84CF1" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="nombre" id="DCE17CC3-7F9A-466C-4D80-BB61C5D23189">
+<createdBy>Dylla</createdBy>
+<createdTime>2022-05-29 18:47:34 UTC</createdTime>
+<ownerDesignName>modelo</ownerDesignName>
+<engineerTo>
+<item key="150AED53-2905-E9A4-1F6A-3D46C4C84CF1" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="apellido_paterno" id="9DE00A19-959E-A889-DE8F-83B06EB2A84A">
+<createdBy>Dylla</createdBy>
+<createdTime>2022-05-29 18:47:37 UTC</createdTime>
+<ownerDesignName>modelo</ownerDesignName>
+<engineerTo>
+<item key="150AED53-2905-E9A4-1F6A-3D46C4C84CF1" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="apellido_materno" id="A1485C1F-B0E7-1DF7-CB90-9F98477CD005">
+<createdBy>Dylla</createdBy>
+<createdTime>2022-05-29 18:47:43 UTC</createdTime>
+<ownerDesignName>modelo</ownerDesignName>
+<engineerTo>
+<item key="150AED53-2905-E9A4-1F6A-3D46C4C84CF1" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="correo" id="4CC5F6CC-6E30-BE2F-1609-607281794CDF">
+<createdBy>Dylla</createdBy>
+<createdTime>2022-05-29 18:47:50 UTC</createdTime>
+<ownerDesignName>modelo</ownerDesignName>
+<engineerTo>
+<item key="150AED53-2905-E9A4-1F6A-3D46C4C84CF1" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="numero" id="450DE9A4-EB6E-D6F3-B7F2-0E5DD3B14469">
+<createdBy>Dylla</createdBy>
+<createdTime>2022-05-29 18:47:54 UTC</createdTime>
+<ownerDesignName>modelo</ownerDesignName>
+<engineerTo>
+<item key="150AED53-2905-E9A4-1F6A-3D46C4C84CF1" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_comuna" id="2249346A-12E9-5BD9-967D-E13E95096A70">
+<createdBy>Dylla</createdBy>
+<createdTime>2022-05-29 18:51:36 UTC</createdTime>
+<generatorID>3EEAF2B0-E0E3-41BB-F037-BB3760547668</generatorID>
+<ownerDesignName>modelo</ownerDesignName>
+<engineerTo>
+<item key="150AED53-2905-E9A4-1F6A-3D46C4C84CF1" value="true"/>
+</engineerTo>
+<referedAttribute>9C68DABB-589B-956C-67A9-8BC594734D5F</referedAttribute>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="5A60E00D-CE82-8DE8-E0EA-A7D4B317DE25" name="Cliente PK">
+<createdBy>Dylla</createdBy>
+<createdTime>2022-05-29 18:48:08 UTC</createdTime>
+<ownerDesignName>modelo</ownerDesignName>
+<engineerTo>
+<item key="150AED53-2905-E9A4-1F6A-3D46C4C84CF1" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>9C978A76-EAC0-DFF0-B406-E683C02402F4</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

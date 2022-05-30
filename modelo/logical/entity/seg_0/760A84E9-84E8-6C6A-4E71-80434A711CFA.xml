@@ -1,0 +1,65 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="760A84E9-84E8-6C6A-4E71-80434A711CFA" name="forma_pago">
+<createdBy>Dylla</createdBy>
+<createdTime>2022-05-29 18:48:23 UTC</createdTime>
+<ownerDesignName>modelo</ownerDesignName>
+<engineerTo>
+<item key="150AED53-2905-E9A4-1F6A-3D46C4C84CF1" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id_forma_pago" id="6E231AE9-89C7-A668-0CCC-6A060144E4EF">
+<createdBy>Dylla</createdBy>
+<createdTime>2022-05-29 18:48:38 UTC</createdTime>
+<ownerDesignName>modelo</ownerDesignName>
+<engineerTo>
+<item key="150AED53-2905-E9A4-1F6A-3D46C4C84CF1" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="descripcion" id="95B39B20-C3B0-0462-01D4-309B276986DB">
+<createdBy>Dylla</createdBy>
+<createdTime>2022-05-29 18:48:50 UTC</createdTime>
+<ownerDesignName>modelo</ownerDesignName>
+<engineerTo>
+<item key="150AED53-2905-E9A4-1F6A-3D46C4C84CF1" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="rut_cliente" id="E06DFDE7-B540-92F8-7742-0D0C2DBE138C">
+<createdBy>Dylla</createdBy>
+<createdTime>2022-05-30 01:15:11 UTC</createdTime>
+<generatorID>284F29F7-76C3-58CA-A723-14A80615F5DC</generatorID>
+<ownerDesignName>modelo</ownerDesignName>
+<engineerTo>
+<item key="150AED53-2905-E9A4-1F6A-3D46C4C84CF1" value="true"/>
+</engineerTo>
+<referedAttribute>9C978A76-EAC0-DFF0-B406-E683C02402F4</referedAttribute>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="5F5E2B5A-AF15-C46D-739C-999D7AAF193B" name="forma_pago PK">
+<createdBy>Dylla</createdBy>
+<createdTime>2022-05-29 18:48:55 UTC</createdTime>
+<ownerDesignName>modelo</ownerDesignName>
+<engineerTo>
+<item key="150AED53-2905-E9A4-1F6A-3D46C4C84CF1" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>6E231AE9-89C7-A668-0CCC-6A060144E4EF</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

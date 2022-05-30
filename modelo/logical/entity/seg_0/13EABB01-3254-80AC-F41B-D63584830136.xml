@@ -1,0 +1,89 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="13EABB01-3254-80AC-F41B-D63584830136" name="proveedor">
+<createdBy>Dylla</createdBy>
+<createdTime>2022-05-29 18:54:01 UTC</createdTime>
+<ownerDesignName>modelo</ownerDesignName>
+<engineerTo>
+<item key="150AED53-2905-E9A4-1F6A-3D46C4C84CF1" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="rut_vendedor" id="EC659341-616B-4DC4-C5AA-8D6D996D1BD9">
+<createdBy>Dylla</createdBy>
+<createdTime>2022-05-29 18:57:17 UTC</createdTime>
+<generatorID>710866B7-81B8-303E-5086-32E8E7D7CCD0</generatorID>
+<ownerDesignName>modelo</ownerDesignName>
+<engineerTo>
+<item key="150AED53-2905-E9A4-1F6A-3D46C4C84CF1" value="true"/>
+</engineerTo>
+<referedAttribute>4FDA9831-8965-4A18-4E84-B9841B111175</referedAttribute>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_producto" id="E4DAE179-4BAE-9A31-48A8-D14B8FA3212B">
+<createdBy>Dylla</createdBy>
+<createdTime>2022-05-29 18:57:46 UTC</createdTime>
+<generatorID>5040D8DC-7EDD-CE5A-6C1C-C31568006F9B</generatorID>
+<ownerDesignName>modelo</ownerDesignName>
+<engineerTo>
+<item key="150AED53-2905-E9A4-1F6A-3D46C4C84CF1" value="true"/>
+</engineerTo>
+<referedAttribute>D0F887E4-1E8E-D803-CA28-A8E0BC49A9CB</referedAttribute>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="fecha" id="D36F0271-665B-BE0D-ECB5-00C991D35296">
+<createdBy>Dylla</createdBy>
+<createdTime>2022-05-29 18:57:51 UTC</createdTime>
+<ownerDesignName>modelo</ownerDesignName>
+<engineerTo>
+<item key="150AED53-2905-E9A4-1F6A-3D46C4C84CF1" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="hora" id="F3971401-2C19-7E09-356C-3FB6EC91C906">
+<createdBy>Dylla</createdBy>
+<createdTime>2022-05-29 18:57:54 UTC</createdTime>
+<ownerDesignName>modelo</ownerDesignName>
+<engineerTo>
+<item key="150AED53-2905-E9A4-1F6A-3D46C4C84CF1" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="stock" id="55DCE0DE-7A40-C37E-C441-F3E6AAF94A11">
+<createdBy>Dylla</createdBy>
+<createdTime>2022-05-29 18:57:56 UTC</createdTime>
+<ownerDesignName>modelo</ownerDesignName>
+<engineerTo>
+<item key="150AED53-2905-E9A4-1F6A-3D46C4C84CF1" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="227BE1C4-10BD-09FD-100F-150F06F42655" name="proveedor PK">
+<createdBy>Dylla</createdBy>
+<createdTime>2022-05-29 18:58:03 UTC</createdTime>
+<ownerDesignName>modelo</ownerDesignName>
+<engineerTo>
+<item key="150AED53-2905-E9A4-1F6A-3D46C4C84CF1" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>D36F0271-665B-BE0D-ECB5-00C991D35296</attributeRef>
+<attributeRef>F3971401-2C19-7E09-356C-3FB6EC91C906</attributeRef>
+<attributeRef>55DCE0DE-7A40-C37E-C441-F3E6AAF94A11</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

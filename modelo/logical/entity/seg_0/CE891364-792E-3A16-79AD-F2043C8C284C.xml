@@ -1,0 +1,89 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="CE891364-792E-3A16-79AD-F2043C8C284C" name="venta">
+<createdBy>Dylla</createdBy>
+<createdTime>2022-05-29 18:55:17 UTC</createdTime>
+<ownerDesignName>modelo</ownerDesignName>
+<engineerTo>
+<item key="150AED53-2905-E9A4-1F6A-3D46C4C84CF1" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="numero_venta" id="9DF93C92-F88F-94E3-CDC0-3B2CA8A422B7">
+<createdBy>Dylla</createdBy>
+<createdTime>2022-05-29 18:55:22 UTC</createdTime>
+<ownerDesignName>modelo</ownerDesignName>
+<engineerTo>
+<item key="150AED53-2905-E9A4-1F6A-3D46C4C84CF1" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="hora" id="F5E877DA-B89A-7F02-FABA-00AD199C22E6">
+<createdBy>Dylla</createdBy>
+<createdTime>2022-05-29 18:55:27 UTC</createdTime>
+<ownerDesignName>modelo</ownerDesignName>
+<engineerTo>
+<item key="150AED53-2905-E9A4-1F6A-3D46C4C84CF1" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="fecha" id="F0A9D4F6-20BC-95E5-57BF-EF3C315C9C5A">
+<createdBy>Dylla</createdBy>
+<createdTime>2022-05-29 18:55:38 UTC</createdTime>
+<ownerDesignName>modelo</ownerDesignName>
+<engineerTo>
+<item key="150AED53-2905-E9A4-1F6A-3D46C4C84CF1" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_forma_pago" id="9BC68E7D-D5A4-3CF1-12A7-648FDA1F0C4C">
+<createdBy>Dylla</createdBy>
+<createdTime>2022-05-29 18:55:51 UTC</createdTime>
+<generatorID>4440480D-2E11-6F6E-9E04-7BF4F1604025</generatorID>
+<ownerDesignName>modelo</ownerDesignName>
+<engineerTo>
+<item key="150AED53-2905-E9A4-1F6A-3D46C4C84CF1" value="true"/>
+</engineerTo>
+<referedAttribute>6E231AE9-89C7-A668-0CCC-6A060144E4EF</referedAttribute>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_seguimiento" id="F392C112-5CD7-104E-ED1B-CC24F5894D7C">
+<createdBy>Dylla</createdBy>
+<createdTime>2022-05-29 18:55:58 UTC</createdTime>
+<generatorID>8DFC12A5-396A-7720-6673-3A6B750C64C0</generatorID>
+<ownerDesignName>modelo</ownerDesignName>
+<engineerTo>
+<item key="150AED53-2905-E9A4-1F6A-3D46C4C84CF1" value="true"/>
+</engineerTo>
+<referedAttribute>6A9612C7-0864-C792-7C34-E1FE29D97D94</referedAttribute>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="FD2A7D9D-AEF0-840A-111D-F2E089C26292" name="venta PK">
+<createdBy>Dylla</createdBy>
+<createdTime>2022-05-29 18:55:54 UTC</createdTime>
+<ownerDesignName>modelo</ownerDesignName>
+<engineerTo>
+<item key="150AED53-2905-E9A4-1F6A-3D46C4C84CF1" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>9DF93C92-F88F-94E3-CDC0-3B2CA8A422B7</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>
